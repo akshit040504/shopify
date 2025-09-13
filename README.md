@@ -13,10 +13,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.getxeno.com"><img src="https://img.shields.io/badge/Xeno-Website-ff69b4?style=for-the-badge&logo=About.me"></a>
-  <a href="mailto:your.email@domain.com"><img src="https://img.shields.io/badge/Email-Contact-success?style=for-the-badge&logo=Gmail"></a>
-  <a href="https://www.linkedin.com/in/yourprofile"><img src="https://img.shields.io/badge/LinkedIn-yourprofile-blue?style=for-the-badge&logo=LinkedIn"></a>
-  <a href="https://twitter.com/yourprofile"><img src="https://img.shields.io/badge/Twitter-@yourprofile-1da1f2?style=for-the-badge&logo=Twitter"></a>
+  <a href="mailto:akshitsinghh.2504@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-success?style=for-the-badge&logo=Gmail"></a>
+  <a href="https://www.linkedin.com/in/akshit-singh-843aa2251/"><img src="https://img.shields.io/badge/LinkedIn-yourprofile-blue?style=for-the-badge&logo=LinkedIn"></a>
 </p>
 
 ---
@@ -47,14 +45,6 @@
 
 ---
 
-<!-- Animated process GIF (replace with demo GIF for your project) -->
-<p align="center">
-  <img src="C:\Users\Akshi\OneDrive\Pictures\Screenshots\Screenshot 2025-09-14 032243.png" width="600" alt="Data Flow Demo">
-</p>
-"C:\Users\Akshi\OneDrive\Pictures\Screenshots\Screenshot 2025-09-14 032243.png"
-
----
-
 ## 🚦 Quick Start
 
 
@@ -65,14 +55,6 @@
 3. Run database migrations  
 4. Start backend and frontend servers  
 5. Deploy via Heroku/Render/Railway/Vercel (follow respective guides)  
-
----
-
-## 📊 Sample Dashboard Screenshot
-
-<p align="center">
-<img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif" width="70%" alt="Dashboard Demo GIF">
-</p>
 
 ---
 
@@ -138,9 +120,8 @@ Integrate. Adapt. Deliver. Real-world retail engineering.
 ## 🌐 Connect With Me!
 
 <p align="center">
-<a href="mailto:your.email@domain.com"><img src="https://img.shields.io/badge/Gmail-your-email-red?style=for-the-badge&logo=Gmail"></a>
-<a href="https://www.linkedin.com/in/yourprofile"><img src="https://img.shields.io/badge/LinkedIn-yourprofile-blue?style=for-the-badge&logo=LinkedIn"></a>
-<a href="https://twitter.com/yourprofile"><img src="https://img.shields.io/badge/Twitter-@yourprofile-1da1f2?style=for-the-badge&logo=Twitter"></a>
+<a href="mailto:akshitsinghh.2504@gmail.com"><img src="https://img.shields.io/badge/Gmail-your-email-red?style=for-the-badge&logo=Gmail"></a>
+<a href="https://www.linkedin.com/in/akshit-singh-843aa2251/"><img src="https://img.shields.io/badge/LinkedIn-yourprofile-blue?style=for-the-badge&logo=LinkedIn"></a>
 </p>
 
 <p align="center">
