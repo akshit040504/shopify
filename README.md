@@ -120,7 +120,7 @@ Integrate. Adapt. Deliver. Real-world retail engineering.
 ## 🌐 Connect With Me!
 
 <p align="center">
-<a href="mailto:akshitsinghh.2504@gmail.com"><img src="https://img.shields.io/badge/Gmail-your-email-red?style=for-the-badge&logo=Gmail"></a>
+ <a href="mailto:akshitsinghh.2504@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-success?style=for-the-badge&logo=Gmail"></a>
 <a href="https://www.linkedin.com/in/akshit-singh-843aa2251/"><img src="https://img.shields.io/badge/LinkedIn-yourprofile-blue?style=for-the-badge&logo=LinkedIn"></a>
 </p>
 
