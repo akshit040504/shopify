@@ -1,174 +1,156 @@
-# 🚀 Shopify Multi-Tenant Data Ingestion & Insights Service
+<!-- Banner GIF -->
+<p align="center">
+  <img src="https://media.giphy.com/media/l0ExncehJzexFpRHq/giphy.gif" width="80%" alt="Shopify Data Insights Banner">
+</p>
 
-Welcome to the Shopify Data Ingestion & Insights Service — built as a hands-on solution for the Xeno FDE Internship 2025 assignment. This project demonstrates enterprise-grade engineering skills: onboarding, integrating, and analyzing retailer customer data with multi-tenancy, real-time sync, and engaging dashboards.
+<h1 align="center">🚀 Shopify Multi-Tenant Data Ingestion & Insights Service</h1>
 
-## Table of Contents
+<p align="center">
+  <b>Forward Deployed Engineer Internship Assignment – Xeno • 2025</b> <br>
+  <img src="https://img.shields.io/badge/Backend-Node.js-blue?style=for-the-badge&logo=Node.js">
+  <img src="https://img.shields.io/badge/Frontend-React.js-brightgreen?style=for-the-badge&logo=React">
+  <img src="https://img.shields.io/badge/Database-PostgreSQL-important?style=for-the-badge&logo=PostgreSQL">
+</p>
 
-- Features
-- Tech Stack
-- Architecture Overview
-- Setup Instructions
-- API Endpoints
-- Database Schema
-- Demo & Documentation
-- Assumptions & Limitations
-- Next Steps
-
----
-
-### 🌟 Features
-
-- Connects to multiple Shopify stores via robust **Shopify API** integration.
-- Ingests **Customers, Orders, Products**, and **Custom Events** (Bonus).
-- **Multi-tenant architecture:** Separate data isolate per store, identified by a tenant ID.
-- Insights Dashboard (Email Auth):
-    - Total customers, orders, revenue.
-    - Orders by date (date-range filter).
-    - Top 5 customers by spend.
-    - Trend charts for business metrics (creative custom visualizations).
-- Schedulable data sync (Webhooks/Scheduler).
-- Deployed (Heroku/Render/Railway/Vercel).
+<p align="center">
+  <a href="https://www.getxeno.com"><img src="https://img.shields.io/badge/Xeno-Website-ff69b4?style=for-the-badge&logo=About.me"></a>
+  <a href="mailto:your.email@domain.com"><img src="https://img.shields.io/badge/Email-Contact-success?style=for-the-badge&logo=Gmail"></a>
+  <a href="https://www.linkedin.com/in/yourprofile"><img src="https://img.shields.io/badge/LinkedIn-yourprofile-blue?style=for-the-badge&logo=LinkedIn"></a>
+  <a href="https://twitter.com/yourprofile"><img src="https://img.shields.io/badge/Twitter-@yourprofile-1da1f2?style=for-the-badge&logo=Twitter"></a>
+</p>
 
 ---
 
-### 🛠️ Tech Stack
+## 💡 Features
 
-| Layer      | Technology                           |
-|------------|--------------------------------------|
-| Backend    | Node.js (Express.js)                 |
-| Frontend   | React.js / Next.js                   |
-| Database   | PostgreSQL / MySQL                   |
-| ORM        | Sequelize / Prisma                   |
-| Charting   | Chart.js / Recharts                  |
-| Auth       | Email Authentication (JWT/Sessions)  |
-| Optional   | Redis / RabbitMQ (Async ingestion)   |
+- Connects and syncs with multiple Shopify stores via API integration (multi-tenancy)
+- Ingests Customers, Orders, Products, plus bonus custom events (e.g., cart abandoned)
+- Email-authenticated dashboard visualizes total customers, revenue, top customers, more
+- Isolated data per store via tenant ID
+- Trend charts and creative business insights
+- Scheduler/webhook support for continuous data sync
+- Clean deployment (Heroku, Render, Railway, Vercel)
 
 ---
 
-### 🔗 Architecture Overview
+## 🛠️ Tech Stack
 
-<!-- Place your architecture diagram below -->
-![High-level Architecture Diagram goes here](architecture-diagram.png)
-
-- Each Shopify store (tenant) is onboarded and isolated via a unique tenant ID.
-- Data ingested securely from Shopify APIs, persisted in RDBMS using ORM.
-- Scheduled job or webhooks keep data synced.
-- API serves backend data to Dashboard frontend (React/Next.js).
-- Auth via email ensures dashboard security.
-
----
-
-### 🚦 Setup Instructions
-
-1. **Clone the Repo**
-    ```
-    git clone https://github.com/<your-username>/xeno-shopify-insights.git
-    cd xeno-shopify-insights
-    ```
-
-2. **Configure Environment**
-    - Create a `.env` file with DB credentials, Shopify API keys, JWT secret, etc.
-    - Example:
-        ```
-        DB_HOST=localhost
-        DB_USER=your_db_user
-        DB_PASS=your_db_password
-        SHOPIFY_API_KEY=your_shopify_api_key
-        SHOPIFY_API_SECRET=your_shopify_api_secret
-        JWT_SECRET=random_secret_key
-        ```
-
-3. **Install Dependencies**
-    ```
-    # For backend
-    cd backend
-    npm install
-
-    # For frontend
-    cd ../frontend
-    npm install
-    ```
-
-4. **Setup Database**
-    - Run migrations (Sequelize/Prisma):
-      ```
-      npx sequelize db:migrate
-      # or
-      npx prisma migrate dev
-      ```
-
-5. **Start Development**
-    ```
-    cd backend
-    npm run dev
-
-    cd ../frontend
-    npm start
-    ```
-
-6. **Deploy**
-    - Push to Heroku, Render, Railway, or Vercel (see respective docs).
+| Layer      | Technology                         |
+|------------|------------------------------------|
+| Backend    | Node.js (Express.js)               |
+| Frontend   | React.js / Next.js                 |
+| Database   | PostgreSQL / MySQL                 |
+| ORM        | Sequelize / Prisma                  |
+| Auth       | Email, JWT/Sessions                |
+| Async      | Redis / RabbitMQ (Optional)        |
+| Charts     | Chart.js, Recharts, etc.           |
 
 ---
 
-### 📡 API Endpoints Example
-
-| Method | Endpoint                       | Description                   |
-|--------|-------------------------------|-------------------------------|
-| POST   | `/api/tenant/onboard`         | Register a new store          |
-| GET    | `/api/:tenantId/customers`    | List customers of store       |
-| GET    | `/api/:tenantId/orders`       | List orders, date-range filter|
-| GET    | `/api/:tenantId/products`     | List products                 |
-| GET    | `/api/:tenantId/metrics`      | Dashboard metrics             |
-
-See detailed docs in `/docs/api.md`.
+<!-- Animated process GIF (replace with demo GIF for your project) -->
+<p align="center">
+  <img src="https://media.giphy.com/media/3o6Zt5jK27CGkQ7E7e/giphy.gif" width="600" alt="Data Flow Demo">
+</p>
 
 ---
 
-### 🗄️ Database Schema (Sample: Sequelize/Prisma)
+## 🚦 Quick Start
 
-| Table      | Key Fields                                      |
-|------------|-------------------------------------------------|
-| Tenants    | `id`, `name`, `shopify_store_id`, `email`       |
-| Customers  | `id`, `tenant_id`, `name`, `email`, ...         |
-| Orders     | `id`, `tenant_id`, `customer_id`, `date`, `total_amount`, ... |
-| Products   | `id`, `tenant_id`, `sku`, `title`, ...          |
-| Events     | `id`, `tenant_id`, `type`, `payload`, ...       |
 
----
+#### Setup Instructions
 
-### 🎥 Demo & Documentation
-
-- [Demo Video Link — max 7mins]
-- [Docs: `/docs/architecture.md`]
-- [API + DB Schema: `/docs/api.md`]
-- Demo covers features, approach, trade-offs, and creative decisions.
+1. Create `.env` with DB, API key, JWT configs  
+2. Install dependencies:
+3. Run database migrations  
+4. Start backend and frontend servers  
+5. Deploy via Heroku/Render/Railway/Vercel (follow respective guides)  
 
 ---
 
-### 👀 Assumptions & Known Limitations
+## 📊 Sample Dashboard Screenshot
 
-- Dummy development Shopify store is used for demo data.
-- Data isolation is per tenant via `tenant_id`; role-based access is basic.
-- Scheduled sync uses CRON jobs; full real-time sync possible with Shopify webhooks.
-- Bonus custom events and async ingestion (using Redis/RabbitMQ) optional.
-
----
-
-### 📈 Next Steps for Production
-
-- Enhance authentication (OAuth2, RBAC, SSO).
-- Scale data sync using event-driven architecture (RabbitMQ).
-- Implement CI/CD pipelines, monitoring, and logging.
-- Harden API security and perform load testing.
-- Extend dashboard analytics with advanced business metrics.
+<p align="center">
+<img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif" width="70%" alt="Dashboard Demo GIF">
+</p>
 
 ---
 
-### 📬 Contact
+## 🔗 API Endpoints
 
-Questions? Reach out at [akshitsinghh.2504@gmail.com].
+| Method | Endpoint                       | Description                             |
+|--------|-------------------------------|-----------------------------------------|
+| POST   | `/api/tenant/onboard`         | Register a new Shopify store            |
+| GET    | `/api/:tenantId/customers`    | Get customers for a store               |
+| GET    | `/api/:tenantId/orders`       | List orders (filter by date-range)      |
+| GET    | `/api/:tenantId/products`     | Get products per store                  |
+| GET    | `/api/:tenantId/metrics`      | Get dashboard metrics                   |
 
-**Built for Xeno FDE Internship — 2025**
+---
 
-*Integrate. Adapt. Deliver. In Real-World Retail Environments.*
+## 🗄️ Sample Database Schema
+
+| Table      | Key Fields                                    |
+|------------|-----------------------------------------------|
+| Tenants    | id, name, shopify_store_id, email             |
+| Customers  | id, tenant_id, name, email, ...               |
+| Orders     | id, tenant_id, customer_id, date, total_amount|
+| Products   | id, tenant_id, sku, title, ...                |
+| Events     | id, tenant_id, type, payload, ...             |
+
+---
+
+## 🎥 Demo
+
+Check out the [Demo Video](https://drive.google.com/demo-link) for a walkthrough (max 7 mins):  
+- Features you built  
+- How you solved the problem  
+- Key trade-offs and design choices  
+
+---
+
+## 👀 Assumptions & Limitations
+
+- Demo uses development Shopify store and sample data
+- Data isolation handled per tenant_id; RBAC is basic
+- Real-time sync via webhooks not fully production-level
+- Redis/RabbitMQ used optionally for async event ingestion
+
+---
+
+## 📈 Next Steps
+
+- Add OAuth, RBAC, SSO for fine-grained access
+- Scale sync using event-driven messaging
+- Setup CI/CD, monitoring, logging, robust security
+- Extend dashboard analytics and business metrics
+
+---
+
+## 🙌 About
+
+Built for the Xeno FDE Internship – 2025  
+Integrate. Adapt. Deliver. Real-world retail engineering.  
+&nbsp;
+
+---
+
+## 🌐 Connect With Me!
+
+<p align="center">
+<a href="mailto:your.email@domain.com"><img src="https://img.shields.io/badge/Gmail-your-email-red?style=for-the-badge&logo=Gmail"></a>
+<a href="https://www.linkedin.com/in/yourprofile"><img src="https://img.shields.io/badge/LinkedIn-yourprofile-blue?style=for-the-badge&logo=LinkedIn"></a>
+<a href="https://twitter.com/yourprofile"><img src="https://img.shields.io/badge/Twitter-@yourprofile-1da1f2?style=for-the-badge&logo=Twitter"></a>
+</p>
+
+<p align="center">
+<img src="https://media.giphy.com/media/26ufnwz3wDUli7GU0/giphy.gif" width="40%" alt="Thanks GIF">
+</p>
+
+---
+
+<!-- Tips
+- Replace GIF/image URLs with your own hosted project GIFs/screenshots for best results.
+- Customize contact/social links as needed.  
+- Add badges, emoji dividers, or more GIFs for extra flair!
+-->
+
