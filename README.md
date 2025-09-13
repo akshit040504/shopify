@@ -49,7 +49,7 @@
 
 <!-- Animated process GIF (replace with demo GIF for your project) -->
 <p align="center">
-  <img src="https://media.giphy.com/media/3o6Zt5jK27CGkQ7E7e/giphy.gif" width="600" alt="Data Flow Demo">
+  <img src=""C:\Users\Akshi\OneDrive\Pictures\Screenshots\Screenshot 2025-09-14 032243.png"" width="600" alt="Data Flow Demo">
 </p>
 
 ---
