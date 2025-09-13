@@ -167,7 +167,7 @@ See detailed docs in `/docs/api.md`.
 
 ### 📬 Contact
 
-Questions? Reach out at [your.email@domain.com] or Xeno HR portal.
+Questions? Reach out at [akshitsinghh.2504@gmail.com].
 
 **Built for Xeno FDE Internship — 2025**
 
