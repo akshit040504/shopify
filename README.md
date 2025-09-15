@@ -45,8 +45,7 @@
 
 ---
 
-## 🚦 Quick Start
-
+## 🚦 Set Up
 
 #### Setup Instructions
 
